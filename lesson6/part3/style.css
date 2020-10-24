@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#layout {
+    padding: 20px;
+}
+p {
+    font-size: 14pt;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+#example1 {
+    border: 1px solid black;
+}
+#example2 {
+    background-color: palegreen;
+    color: green;
+    border: 1px solid green;
+}
+#example3 {
+    border: 1px dotted black;
+}
+#example4 {
+    border: 1px dashed black;
+}
+#example5 {
+    color: red;
+    border-bottom: 1px solid red;
+}
+#example6 {
+    background-color: aliceblue;
+    border-left: 5px solid dodgerblue;
+}
+#example7 {
+    border: 1px solid black; 
+    border-radius: 15px;
+}
+#example8 {
+    border: 1px solid dodgerblue;
+    border-radius: 10px 20px;
+}
+#example9 {
+    border: 1px solid green;
+    border-bottom-right-radius: 20px;
+}
+#example10 {
+    border: 1px solid green;
+    outline: 3px solid greenyellow;
+}

@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#content-overflow-example {
+    background-color: white;
+    color: #212121;
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    border: 2px solid dodgerblue;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+#content-overflow-example h1 {
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+#content-overflow-example p {
+    font-size: 14pt;
+    text-align: justify;
+    margin-bottom: 10px;
+}
