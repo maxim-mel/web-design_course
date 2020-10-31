@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+#menu {
+    background-color: dodgerblue;
+    padding: 20px;
+    text-align: center;
+}
+#menu ul {
+    list-style: none;
+}
+#menu ul li {
+    display: inline;
+    margin: 0 10px;
+}
+#menu ul li a {
+    color: #ffffff;
+    font-size: 14pt;
+    font-weight: 300;
+}
