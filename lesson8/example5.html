@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Псевдоэлементы в CSS</title>
+        <meta charset="utf-8">
+        <style>
+           p:first-child::selection {
+               background-color: aquamarine;
+           }
+           p:last-child::selection {
+               background-color: wheat;
+           }
+        </style>
+    </head>
+    <body>
+        <p>В данном примере с помощью псевдоэлемента в CSS заменён цвет выделения текста. Для разных абзацев установлен разный цвет фона при выделении.</p>
+        <p>Aenean gravida sapien risus, eget facilisis metus imperdiet sit amet. Morbi sapien dolor, tincidunt in iaculis id, efficitur eu nisl. Suspendisse ut nulla ultricies, convallis metus at, tincidunt sem. Phasellus at lobortis nulla. Mauris iaculis dui vel lorem placerat hendrerit. Integer odio diam, tristique vitae vehicula in, facilisis ut lorem. Nulla malesuada placerat purus, ut aliquam erat euismod et. Nulla aliquam auctor lorem, eget hendrerit arcu suscipit vitae. Maecenas lobortis magna a libero posuere, vitae vestibulum lacus facilisis. In ultrices tincidunt velit a congue. Phasellus eu sagittis velit. Duis pretium justo ipsum, id pellentesque neque tincidunt quis. Ut venenatis leo a massa ullamcorper vehicula. Pellentesque lacus risus, gravida ut odio ac, sollicitudin feugiat turpis.</p>
+    </body>
+</html>

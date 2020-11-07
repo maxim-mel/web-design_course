@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Псевдоклассы в CSS</title>
+        <meta charset="utf-8">
+        <style>
+            .block {
+                width: 100px;
+                height: 100px;
+                background-color: dodgerblue;
+                margin: 4px;
+                display: inline-block;
+                color: white;
+                font-size: 24pt;
+                text-align: center;
+                line-height: 100px;
+            }
+            .block:nth-child(4n+1) {
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="block">1</div>
+        <div class="block">2</div>
+        <div class="block">3</div>
+        <div class="block">4</div>
+        <div class="block">5</div>
+        <div class="block">6</div>
+        <div class="block">7</div>
+        <div class="block">8</div>
+    </body>
+</html>

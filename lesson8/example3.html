@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Псевдоэлементы в CSS</title>
+        <meta charset="utf-8">
+        <style>
+            #text::before {
+                content: 'BEFORE ';
+            }
+            #text::after {
+                content: ' AFTER';
+            }
+        </style>
+    </head>
+    <body>
+        <p>Слова BEFORE и AFTER добавляются с помощью псевдоэлементов:</p>
+        <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </body>
+</html>

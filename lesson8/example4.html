@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Псевдоэлементы в CSS</title>
+        <meta charset="utf-8">
+        <style>
+            p {
+                font-size: 14pt;
+                line-height: 1.4em;
+                text-align: justify;
+            }
+            #p1::first-line {
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            #p2::first-letter {
+                font-size: 28pt;
+                color: red;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus, sapien vitae lobortis luctus, orci nunc vestibulum tellus, id ultrices mauris ipsum ac purus. Sed a mattis ante, eget congue quam. Ut feugiat tincidunt vulputate. Nunc pulvinar ac sapien eget vulputate. Nulla dapibus elit eget tellus sagittis eleifend. Maecenas varius euismod lectus sed sodales. In lacinia, leo nec dapibus mollis, tortor risus scelerisque orci, eu pellentesque dolor purus ut ex. Morbi ut dolor egestas, iaculis sapien eget, fermentum purus. Suspendisse id vestibulum enim, sed congue metus. Donec dui urna, rhoncus at sagittis eu, tristique et nunc. Nam iaculis ultricies nulla, id imperdiet nibh tempor vitae. Suspendisse non nunc vel est tincidunt molestie eu non tortor. Suspendisse fermentum nibh ut erat dictum, ac elementum magna sollicitudin. Sed ac erat est. Proin lobortis quam sit amet efficitur ornare.</p>
+        <p id="p2">Aenean gravida sapien risus, eget facilisis metus imperdiet sit amet. Morbi sapien dolor, tincidunt in iaculis id, efficitur eu nisl. Suspendisse ut nulla ultricies, convallis metus at, tincidunt sem. Phasellus at lobortis nulla. Mauris iaculis dui vel lorem placerat hendrerit. Integer odio diam, tristique vitae vehicula in, facilisis ut lorem. Nulla malesuada placerat purus, ut aliquam erat euismod et. Nulla aliquam auctor lorem, eget hendrerit arcu suscipit vitae. Maecenas lobortis magna a libero posuere, vitae vestibulum lacus facilisis. In ultrices tincidunt velit a congue. Phasellus eu sagittis velit. Duis pretium justo ipsum, id pellentesque neque tincidunt quis. Ut venenatis leo a massa ullamcorper vehicula. Pellentesque lacus risus, gravida ut odio ac, sollicitudin feugiat turpis.</p>
+    </body>
+</html>

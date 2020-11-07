@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Псевдоэлементы в CSS</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <style>
+           #quote {
+               max-width: 500px;
+               margin: 0 auto;
+               background-color: #e2fdf2;
+               color: #008080;
+               padding: 10px 50px;
+               font-size: 16pt;
+               line-height: 1.6em;
+               border-radius: 10px;
+               font-family: 'Playfair Display', serif;
+               position: relative;
+           }
+           #quote::before {
+               content: '\201e';
+               font-size: 48pt;
+               font-weight: 700;
+               position: absolute;
+               top: -14px;
+               left: 10px;
+           }
+           #quote::after {
+               content: '\201c';
+               font-size: 48pt;
+               font-weight: 700;
+               position: absolute;
+               right: 10px;
+               bottom: -4px;
+           }
+        </style>
+    </head>
+    <body>
+        <p id="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus, sapien vitae lobortis luctus, orci nunc vestibulum tellus, id ultrices mauris ipsum ac purus. Sed a mattis ante, eget congue quam. Ut feugiat tincidunt vulputate. Nunc pulvinar ac sapien eget vulputate.</p>
+    </body>
+</html>
