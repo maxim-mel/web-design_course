@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Использование свойства display: table</title>
+        <meta charset="utf-8">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            html, body {
+                height: 100%;
+            }
+            #main-block {
+                width: 100%;
+                height: 100%;
+                display: table;
+                padding: 20px 10vw;
+                color: #212121;
+            }
+            #inner {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            #main-block h1 {
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main-block">
+            <div id="inner">
+                <h1>Вертикальное выравнивание содержимого с помощью display: table</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus, nisi sed euismod porta, nisl purus vulputate diam, ut rutrum arcu lacus a leo. Pellentesque facilisis justo libero, non convallis ex sagittis vel. Vestibulum ipsum libero, elementum mollis vulputate ac, dignissim malesuada justo. Curabitur nec eleifend erat. Morbi ornare diam dolor. Etiam consequat leo eget libero mollis tincidunt.</p>
+            </div>
+        </div>
+    </body>
+</html>
