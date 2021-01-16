@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Формы в HTML</title>
+        <meta charset="utf-8">
+        <style>
+            div {
+                margin-bottom: 1em;
+            }
+            hr {
+                margin: 1em 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Формы в HTML</h1>
+        <h2>input type="text", button</h2>
+        <form action="">
+            <div>
+                <label for="name">Имя:</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="phone">Телефон:</label>
+                <input type="text" id="phone">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email">
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+        <hr>
+        <h2>placeholder</h2>
+        <form action="">
+            <input type="text" placeholder="E-mail">
+        </form>
+        <hr>
+        <h2>input type="password"</h2>
+        <form action="">
+            <label for="pass">Пароль:</label>
+            <input type="password" id="pass">
+        </form>
+        <hr>
+        <h2>input type="number"</h2>
+        <form action="">
+            <label for="num">Введите число от 1 до 10:</label>
+            <input type="number" min="1" max="10" id="num">
+        </form>
+        <hr>
+        <h2>input type="checkbox"</h2>
+        <form action="">
+            <input type="checkbox" id="check">
+            <label for="check">Я согласен с предложенными условиями</label>
+        </form>
+        <hr>
+        <h2>input type="radio"</h2>
+        <form action="">
+            <div>
+                <input type="radio" id="rb-1" name="rb-example" checked>
+                <label for="rb-1">Вариант 1</label>
+            </div>
+            <div>
+                <input type="radio" id="rb-2" name="rb-example">
+                <label for="rb-2">Вариант 2</label>
+            </div>
+            <div>
+                <input type="radio" id="rb-3" name="rb-example">
+                <label for="rb-3">Вариант 3</label>
+            </div>
+        </form>
+        <hr>
+        <h2>textarea</h2>
+        <form action="">
+            <label for="message">Текст сообщения:</label>
+            <textarea id="message" cols="30" rows="10">Some text</textarea>
+        </form>
+        <hr>
+        <h2>select, option</h2>
+        <form action="">
+            <label for="choose">Выберите элемент:</label>
+            <select id="choose">
+                <option value="variant1">Вариант 1</option>
+                <option value="variant2">Вариант 2</option>
+                <option value="variant3">Вариант 3</option>
+                <option value="variant4">Вариант 4</option>
+            </select>
+        </form>
+        <hr>
+        <h2>optgroup</h2>
+        <form action="">
+            <label for="choose2">Выберите элемент:</label>
+            <select id="choose2">
+                <optgroup label="Группа 1">
+                    <option value="variant1">Вариант 1</option>
+                    <option value="variant2">Вариант 2</option>
+                </optgroup>
+                <optgroup label="Группа 2">
+                    <option value="variant3">Вариант 3</option>
+                    <option value="variant4">Вариант 4</option>
+                </optgroup>
+            </select>
+        </form>
+        <hr>
+        <h2>input type="file"</h2>
+        <form action="">
+            <input type="file" multiple>
+        </form>
+    </body>
+</html>
