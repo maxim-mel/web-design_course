@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html, body {
+    height: 100%;
+}
+#container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    padding: 30px;
+}
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 70px;
+    background-color: #ffffff;
+    color: #212121;
+}
+form h1 {
+    font-size: 22pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+label {
+    display: block;
+    font-size: 11pt;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+input[type="text"] {
+    width: 100%;
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    font-size: 13pt;
+    font-weight: 500;
+    color: #212121;
+}
+input[type="text"]:focus {
+    border: 1px solid #868686;
+    outline: none;
+}
+input[type="text"]::placeholder {
+    color: #b6b6b6;
+}
+input[type="text"]:focus::placeholder {
+    font-size: 0;
+}
+.input_text-block {
+    margin-bottom: 30px;
+}
+.inline-inputs {
+    font-size: 0;
+}
+.input_text-block:nth-child(1),
+.input_text-block:nth-child(2) {
+    display: inline-block;
+    width: 50%;
+}
+.input_text-block:nth-child(1) {
+    padding-right: 15px;
+}
+.input_text-block:nth-child(2) {
+    padding-left: 15px;
+}
+textarea {
+    width: 100%;
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    font-size: 13pt;
+    font-weight: 500;
+    color: #212121;
+    resize: none;
+}
+textarea:focus {
+    border: 1px solid #868686;
+    outline: none;
+}
+textarea::placeholder {
+    color: #b6b6b6;
+}
+textarea:focus::placeholder {
+    font-size: 0;
+}
+button {
+    display: block;
+    padding: 15px 25px;
+    margin: 30px auto 0 auto;
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    border: none;
+    color: #ffffff;
+    font-size: 11pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
