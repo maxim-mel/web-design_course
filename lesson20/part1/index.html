@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Адаптивная вёрстка</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-color: lightblue;
+            }
+            h1 {
+                color: blue;
+                font-size: 28pt;
+            }
+            p {
+                font-size: 14pt;
+                text-align: justify;
+            }
+            @media (max-width: 1000px) {
+                body {
+                    background-color: lavender;
+                }
+                h1 {
+                    color: red;
+                    font-size: 24pt;
+                }
+            }
+            @media (max-width: 750px) {
+                body {
+                    background-color: lemonchiffon;
+                }
+                h1 {
+                    color: green;
+                    font-size: 22pt;
+                }
+            }
+            @media (max-width: 500px) {
+                body {
+                    background-color: lightskyblue;
+                }
+                h1 {
+                    color: white;
+                    font-size: 18pt;
+                }
+                p {
+                    font-size: 12pt;
+                }
+            }
+            @media (max-width: 350px) and (orientation: portrait) {
+                body {
+                    background-color: lightsalmon;
+                }
+                h1 {
+                    color: brown;
+                    font-size: 16pt;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Заголовок страницы</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper sed nisi ut hendrerit. Phasellus vitae ligula vel nisi gravida imperdiet. Donec dapibus semper molestie. In id tortor in sapien rutrum mattis vitae sit amet ipsum. Etiam nec sapien in eros ultricies fermentum eget eget lorem. Donec ut odio quis purus facilisis imperdiet. Morbi eget pellentesque erat.</p>
+    </body>
+</html>
