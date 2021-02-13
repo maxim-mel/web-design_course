@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Адаптивная веб-страница</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: 'Open Sans', sans-serif;
+            }
+            #layout {
+                padding: 20px;
+                overflow: auto;
+            }
+            #menu {
+                list-style: none;
+                width: 210px;
+                float: left;
+            }
+            #menu li a {
+                display: block;
+                color: #3F51B5;
+                text-decoration: none;
+                background-color: #E8EAF6;
+                border: 1px solid #3F51B5;
+                border-radius: 5px;
+                padding: 8px 14px;
+                margin-bottom: 10px;
+                font-size: 13pt;
+                font-weight: 400;
+            }
+            #menu li:last-child a {
+                margin-bottom: 0;
+            }
+            #content {
+                margin-left: 240px;
+            }
+            #content h1 {
+                font-size: 26pt;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            #content p {
+                font-size: 13pt;
+                font-weight: 400;
+            }
+            @media (max-width: 580px) {
+                #menu {
+                    width: 100%;
+                    float: none;
+                    margin-bottom: 20px;
+                }
+                #content {
+                    margin-left: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="layout">
+            <ul id="menu">
+                <li><a href="">Главная страница</a></li>
+                <li><a href="">Статьи</a></li>
+                <li><a href="">Документы</a></li>
+                <li><a href="">Прайс-лист</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Фотографии</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <div id="content">
+                <h1>Simple website</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum nunc purus, in laoreet mauris pharetra ac. Maecenas ut iaculis augue. Pellentesque dignissim iaculis orci, aliquam laoreet elit dapibus et. Sed vitae semper ligula. Vivamus at nunc et leo dictum ullamcorper tristique sit amet erat. Fusce ac enim enim. Nulla vitae tristique eros.</p>
+            </div>
+        </div>
+    </body>
+</html>
