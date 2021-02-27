@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Переходы в CSS</title>
+        <meta charset="utf-8">
+        <style>
+            #example {
+                width: 200px;
+                height: 200px;
+                background-color: lightgreen;
+                transition: width 3s, background-color 5s, box-shadow 3s;
+                transition-timing-function: linear;
+                transition-delay: 1s;
+            }
+            #example:hover {
+                width: 100%;
+                background-color: green;
+                box-shadow: 3px 3px 5px lawngreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="example"></div>
+    </body>
+</html>
