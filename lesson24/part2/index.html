@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Анимация средствами CSS</title>
+        <meta charset="utf-8">
+        <style>
+            div {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 8px;
+            }
+            #block1 {
+                background-color: dodgerblue;
+                animation-name: example;
+                animation-duration: 3s;
+            }
+            @keyframes example {
+                from {background-color: dodgerblue;}
+                to {background-color: lightgreen;}
+            }
+            #block2 {
+                background-color: green;
+                animation-name: example2;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes example2 {
+                0% {background-color: green;}
+                25% {background-color: blue;}
+                50% {background-color: red;}
+                75% {background-color: magenta;}
+            }
+        </style>
+    </head>
+    <body>
+        <div id="block1"></div>
+        <div id="block2"></div>
+    </body>
+</html>

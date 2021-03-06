@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2D-трансформации элементов средствами CSS</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                padding: 30px;
+            }
+            div {
+                width: 150px;
+                height: 150px;
+                padding: 10px;
+                background-color: lightgreen;
+                border: 2px solid green;
+                display: inline-block;
+                margin: 50px;
+            }
+            .ex1 {
+                transform: translate(30px, 10px);
+            }
+            .ex2 {
+                transform: rotate(10deg);
+                transform-origin: 100% 0;
+            }
+            .ex3 {
+                transform: scale(1.1, 0.8);
+            }
+            .ex4 {
+                transform: skew(-10deg, 5deg);
+            }
+            .ex5 {
+                transform: matrix(1, -0.3, 0, 1, 0, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>2D-трансформации</h1>
+        <div class="ex1">Example 1<br>translate(30px, 10px)</div>
+        <div class="ex2">Example 2<br>rotate(10deg)</div>
+        <div class="ex3">Example 3<br>scale(1.1, 0.8)</div>
+        <div class="ex4">Example 4<br>skew(-10deg, 5deg)</div>
+        <div class="ex5">Example 5<br>matrix(1, -0.3, 0, 1, 0, 0</div>
+    </body>
+</html>
