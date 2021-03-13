@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    padding: 20px;
+}
+h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+#block {
+    font-size: 0;
+    text-align: center;
+    margin: 30px 0;
+}
+.example {
+    width: 200px;
+    height: 200px;
+    margin: 10px 25px;
+    border: 2px solid #e0e0e0;
+    display: inline-block;
+    perspective: 250px;
+}
+.square {
+    width: 100%;
+    height: 100%;
+    background-color: dodgerblue;
+    color: #ffffff;
+    line-height: 196px;
+    font-size: 14pt;
+}
+.square.tr-x-axis {
+    animation: tr-x-anim 1s ease-in-out 0s infinite alternate;
+}
+.square.tr-y-axis {
+    animation: tr-y-anim 1s ease-in-out 0s infinite alternate;
+}
+.square.tr-z-axis {
+    animation: tr-z-anim 1s ease-in-out 0s infinite alternate;
+}
+@keyframes tr-x-anim {
+    from {transform: translateX(25px);}
+    to {transform: translateX(-25px);}
+}
+@keyframes tr-y-anim {
+    from {transform: translateY(25px);}
+    to {transform: translateY(-25px);}
+}
+@keyframes tr-z-anim {
+    from {transform: translateZ(25px);}
+    to {transform: translateZ(-25px);}
+}

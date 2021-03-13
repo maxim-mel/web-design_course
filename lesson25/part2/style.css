@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body {
+    height: 100%;
+}
+#container {
+    height: 100%;
+    perspective: 1250px;
+    perspective-origin: center -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 10s infinite linear;
+}
+@keyframes rotate {
+    100% {transform: rotateY(360deg);}
+}
+.side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    border: 1px solid #424242;
+    padding: 15px;
+    font-size: 16pt;
+    transition: all 0.25s;
+}
+.front {
+    transform: translateZ(100px);
+    background-color: gold;
+}
+.back {
+    transform: translateZ(-100px) rotateY(180deg);
+    background-color: goldenrod;
+}
+.top  {
+    transform: rotateX(-270deg) translateY(-100px);
+    transform-origin: top center;
+    background-color: greenyellow;
+}
+.bottom {
+    transform: rotateX(270deg) translateY(100px);
+    transform-origin: bottom center;
+    background-color: green;
+}
+.left {
+    transform: rotateY(270deg) translateX(-100px);
+    transform-origin: center left;
+    background-color: tomato;
+}
+.right {
+    transform: rotateY(-270deg) translateX(100px);
+    transform-origin: top right;
+    background-color: palevioletred;
+}
+#cube:hover .front {
+    transform: translateZ(150px);
+}
+#cube:hover .back {
+    transform: translateZ(-150px) rotateY(180deg);
+}
+#cube:hover .top  {
+    transform: rotateX(-270deg) translateZ(50px) translateY(-100px);
+}
+#cube:hover .bottom {
+    transform: rotateX(270deg) translateZ(50px) translateY(100px);
+}
+#cube:hover .left {
+    transform: rotateY(270deg) translateZ(50px) translateX(-100px);
+}
+#cube:hover .right {
+    transform: rotateY(-270deg) translateZ(50px) translateX(100px);
+}
